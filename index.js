@@ -1,3 +1,22 @@
+//User constructors
+
+function User (firstName, lastName, dob, gender, weight, height, city, state, indPoints, team, teamPts, userBadge, avatar) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = dob;
+  this.gender = gender;
+  this.weight = weight;
+  this.height = height;
+  this.city = city;
+  this.state = state;
+  this.indPoints = indPoints;
+  this.team = team;
+  this.teamPts = teamPts;
+  this.userBadge = userBadge;
+  this.avatar = avatar;  
+};
+
+
 // Badges using icons
 function Badge (name, icon, bonusPts) {
   this.name = name;
