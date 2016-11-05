@@ -1,8 +1,11 @@
+
+
 body {
   margin-left: 3rem;
 }
 
 form {
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-bottom: 1rem;
   width: 33%;
@@ -16,4 +19,8 @@ input {
 div.badges {
   height: 400px;
   width: 600px;
+}
+
+h1 {
+  color: #337ab7
 }
