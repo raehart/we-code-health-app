@@ -80,7 +80,7 @@ function displayUser(currentUser){
 //display team dat
 function displayTeam(userTeam){
   console.log(userTeam);
-  $('div.teamPts').append("<h3> My Team: " + userTeam.name + "</h3> <p>Team Points" + userTeam.teamPts + "</p>");
+  $('div.teamPts').append("<h3> My Team: " + userTeam.name + "</h3> <p>Team Points: " + userTeam.teamPts + "</p>");
   for (i=0; i < userTeam.members.length; i++) {
     $('div.teamMembers').append(userTeam.members[i].name);
     }
@@ -88,7 +88,7 @@ function displayTeam(userTeam){
 
 function displayOpt(optTeam){
   console.log(optTeam);
-  $('div.optPts').append("<h3> Rival Team: " + optTeam.name + "</h3> <p>Team Points" + optTeam.teamPts + "</p>");
+  $('div.optPts').append("<h3> Rival Team: " + optTeam.name + "</h3> <p>Team Points: " + optTeam.teamPts + "</p>");
   for (i=0; i < optTeam.members.length; i++) {
     $('div.optMembers').append(optTeam.members[i].name);
     }

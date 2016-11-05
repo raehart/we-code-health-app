@@ -1,5 +1,11 @@
-html {
-	background-color: blue;
+.blue {
+	background-color: #7bc9d8;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.gray{
+	background-color: #9bb0b5;
 }
 
 h2 {
@@ -8,6 +14,9 @@ h2 {
 
 div.badges {
   height: 400px;
-  width: 600px;
+  display: inline;
 }
 
+
+
+/*media queries*/
