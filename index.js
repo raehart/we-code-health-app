@@ -72,7 +72,7 @@ function displayUser(currentUser){
   $('div.solopoints').append("<p>My Points" + currentUser.indPoints + "/ 500 </p> <p> Progress towards $25 Nike Gift Card");
   for (i=0; i < currentUser.userBadge.length; i++) {
       console.log(currentUser.userBadge[i].icon);
-    $('div.badges').append("<img src=" + currentUser.userBadge[i].icon + "></img> <p>" + currentUser.userBadge[i].name + "</p>");
+    $('div.badges').append("<span><img src=" + currentUser.userBadge[i].icon + "></img> <p>" + currentUser.userBadge[i].name + "</p></span>");
     }
 
 };
