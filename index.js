@@ -11,12 +11,13 @@ function User (firstName, lastName, dob, gender, weight, height, city, state, in
   this.state = state;
   this.indPoints = indPoints;
   this.team = team;
-  this.userBadge = userBadge
-  this.avatar = avatar;  
+  this.teamPts = teamPts;
+  this.userBadge = userBadge;
+  this.avatar = avatar;
 };
 
 
-//Activity constructor 
+//Activity constructor
 function Activity(name, points, time, icon){
   this.name = name;
   this.points = points;
@@ -55,7 +56,7 @@ var Brigette = new User("Brigette","Eckert","","Female","","","Portland","OR",18
 //teams
 var bigBird = new Team("Big Bird", [Brigette,Jeanette],240);
 var Oscar = new Team("Oscar", [James,Jen],210);
-//activites 
+//activites
 
 
 
@@ -66,7 +67,7 @@ function earnBadge(badgeEarned){
 
 //earnBadge(mvp);
 
-//Display individual data 
+//Display individual data
 
 function displayUser(currentUser){
   $('div.solopoints').append("<p>My Points" + currentUser.indPoints + "/ 500 </p> <p> Progress towards $25 Nike Gift Card");
@@ -98,8 +99,12 @@ displayUser(Jen);
 displayTeam(Oscar);
 displayOpt(bigBird);
 
-//add activity 
+//add activity
 
 
 //set up alogirthm to determine points per time. low intensity .5pt per min, high intensity = 1 pt per mins
 
+
+earnBadge(mvp);
+
+//indivual progress bar
