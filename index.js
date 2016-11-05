@@ -33,11 +33,10 @@ function Badge (name, icon, bonusPts) {
 };
 
 //Team constructor
-function Team (name, members, teamPts, opponent) {
+function Team (name, members, teamPts) {
   this.name = name;
   this.members = members;
   this.teamPts = teamPts;
-  this.opponent = opponent;
 };
 
 var path = "./styles/img/";
@@ -54,8 +53,8 @@ var James = new User("James","Smith","","Male","","","Portland","OR",110,"Oscar"
 var Jeanette = new User("Jeanette","Valli","","Female","","","Portland","OR",60,"bigBird",[joinTeam,threeActivities],"");
 var Brigette = new User("Brigette","Eckert","","Female","","","Portland","OR",180,"bigBird",[joinTeam,mvp,threeActivities,fiveActivities,tenActivities],"");
 //teams
-var bigBird = new Team("Big Bird", [Brigette,Jeanette],240,Oscar);
-var Oscar = new Team("Oscar", [James,Jen],210,bigBird);
+var bigBird = new Team("Big Bird", [Brigette,Jeanette],240);
+var Oscar = new Team("Oscar", [James,Jen],210);
 //activites 
 
 
@@ -87,17 +86,17 @@ function displayTeam(userTeam){
     }
 };
 
-// function displayOpt(optTeam){
-//   console.log(optTeam);
-//   $('div.optPts').append("<h3> Rival Team: " + optTeam.name + "</h3> <p>Team Points" + optTeam.teamPts + "</p>");
-//   for (i=0; i < optTeam.members.length; i++) {
-//     $('div.optMembers').append(optTeam.members[i].name);
-//     }
-// };
+function displayOpt(optTeam){
+  console.log(optTeam);
+  $('div.optPts').append("<h3> Rival Team: " + optTeam.name + "</h3> <p>Team Points" + optTeam.teamPts + "</p>");
+  for (i=0; i < optTeam.members.length; i++) {
+    $('div.optMembers').append(optTeam.members[i].name);
+    }
+};
 
 displayUser(Jen);
 displayTeam(Oscar);
-// displayOpt(Big Bird);
+displayOpt(bigBird);
 
 //add activity 
 

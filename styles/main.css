@@ -1,3 +1,7 @@
+html {
+	background-color: blue;
+}
+
 h2 {
 	border-bottom: 2pt
 }
@@ -6,3 +10,4 @@ div.badges {
   height: 400px;
   width: 600px;
 }
+
