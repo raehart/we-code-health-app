@@ -11,7 +11,6 @@ function User (firstName, lastName, dob, gender, weight, height, city, state, in
   this.state = state;
   this.indPoints = indPoints;
   this.team = team;
-  this.teamPts = teamPts;
   this.userBadge = userBadge;
   this.avatar = avatar;
 };
