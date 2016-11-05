@@ -13,7 +13,7 @@ function User (firstName, lastName, dob, gender, weight, height, city, state, in
   this.team = team;
   this.teamPts = teamPts;
   this.userBadge = userBadge;
-  this.avatar = avatar;  
+  this.avatar = avatar;
 };
 
 
@@ -50,3 +50,5 @@ function earnBadge(badgeEarned){
 };
 
 earnBadge(mvp);
+
+//indivual progress bar
