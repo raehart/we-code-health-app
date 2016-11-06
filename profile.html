@@ -1,78 +1,72 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-<header>
-  <h1>Enter your profile information</h1>
-</header>
-<form>
-  <div class="container">
-    <div class="row">
-    <div class="col-sm-2">
-  <div class="form-group" >
-     <label for="profilePic">Add a profile picture</label>
-     <input type="file" id="profilePic">
-  </div>
-  <div class="form-group">
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" placeholder="firstName">
-  </div>
-  <div class="form-group">
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" placeholder="lastName">
-  </div>
-  <div class="form-group">
-    <label for="age">Age</label>
-    <input type="text" id="age">
-  </div>
-  <div class="form-group">
-    <label for="gender">Gender (Optional)</label>
-    <input type="text" id="gender">
-  </div>
-  <div class="form-group">
-    <label for="height">Height (Optional)</label>
-    <input type="text" id="height">
-  </div>
-  <div class="form-group">
-    <label for="weight">Weight (Optional)</label>
-    <input type="text" id="weight">
-  </div>
-  <div class="form-group">
-    <label for="city">City</label>
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose City
-      <span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Beaverton</a></li>
-        <li><a href="#">Eugene</a></li>
-        <li><a href="#">Hillsboro</a></li>
-        <li><a href="#">Medford</a></li>
-        <li><a href="#">Portland</a></li>
-        <li><a href="#">Tigard</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="state">State</label>
-    <input type="text" id="state">
-  </div>
 
-  <button type="submit" class="btn btn-default">Save</button>
-  <button type="submit" class="btn btn-default">Update</button>
-</div>
-</div>
-</div>
-</form>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="index.js"></script>
+<body>
+    <header>
+        <h1 class="display-3">Enter your profile information</h1>
+    </header>
+    <form class="center-block">
+        <div class="form-group">
+            <label for="profilePic">Add a profile picture</label>
+            <input type="file" id="profilePic" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="First Name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Last Name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" id="age" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender (Optional)</label>
+            <input type="text" id="gender" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="height">Height (Optional)</label>
+            <input type="text" id="height" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (Optional)</label>
+            <input type="text" id="weight" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose City
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Beaverton</a></li>
+                    <li><a href="#">Eugene</a></li>
+                    <li><a href="#">Hillsboro</a></li>
+                    <li><a href="#">Medford</a></li>
+                    <li><a href="#">Portland</a></li>
+                    <li><a href="#">Tigard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-default">Save</button>
+        <button type="submit" class="btn btn-default">Update</button>
+    </form>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

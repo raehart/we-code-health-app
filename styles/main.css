@@ -9,14 +9,16 @@
 	background-color: #9bb0b5;
 }
 
+h1 {
+	text-align: center;
+}
+
 h2 {
 	border-bottom: 2pt
 }
 
 form {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   width: 33%;
   border: medium solid #337ab7;
 }
@@ -32,4 +34,3 @@ div.badges {
   margin-bottom: 25px;
 
 }
-
